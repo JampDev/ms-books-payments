@@ -19,6 +19,9 @@ spring:
 ## Configuracion de Instancia
 server:
   port: 8089
+  error:
+    include-message: always
+    include-stacktrace: never
 
 ## Configuracion del cliente Eureka
 eureka:

@@ -29,6 +29,7 @@ public class Purchase {
     private String buyer;
 
     @Column(name = Consts.PURCHASE_DATE)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime purchaseDate;
 
     @Column(name = Consts.TOTAL)
